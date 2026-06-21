@@ -1,9 +1,38 @@
 interface BaseMonitor {
-    
+    returnMostValuablePlayerCalculation(timesAwarded: number): number;
+    returnFirstTeamAssociatedPressAllProSelectionCalculation(timesAwarded: number): number;
+    returnChampionshipsWonCalculation(championshipsAwarded: number): number;
+    returnProBowlAccoladeCalculation(timesAwarded: number): number;
+    returnWeightedApproximateValueCalculation(weightApproximateValue: number): number;
 };
+
+interface AllDecadeCalculation {
+    returnFirstTeamSelectedCalculation(): number;
+    returnSecondTeamSelectedCalculation(): number;
+    returnNoDesignationTeamSelectedCalculation(): number;
+}
+
+interface OffenseTeamAllDecadeSelectionMonitor extends AllDecadeCalculation {}
+
+interface DefenseTeamAllDecadeSelectionMonitor extends AllDecadeCalculation {}
+
+interface SepcialTeamsAllDecadeSelectionMonitor extends AllDecadeCalculation {}
+
+interface HallOfFameFinalistMonitor {
+    returnAmountOfTimesWasHallOfFameFinalistCalculation(numberOfNominations: number): number;
+    returnAmountOfTimesWasHallOfFameSemifinalistCalculation(numberOfNominations: number): number;
+}
+
+interface PlayedInAFLPenaltyMonitor {
+    returnPlayedInAFLPenaltyCalculation(yearsPlayed: number): number;
+}
 
 interface NoChampionshipsPenaltyMonitor {
     returnNoChampionshipsPenaltyCalculation(): number;
+}
+
+interface DefensivePlayerOfTheYearMonitor {
+    returnDefensivePlayerOfTheYearCalculation(timesAwarded: number): number;
 }
 
 interface PassingYardsMonitor {
@@ -35,13 +64,14 @@ interface ReceivingTouchdownsMonitor {
 };
 
 interface SacksMonitor {
-    returnSacksCalculation(): number;
+    returnSacksCalculation(sacksMade: number): number;
 }
 
 interface InterceptionsMonitor {
-    returnInterceptionsCalculation(): number;
+    returnInterceptionsCalculation(interceptions: number): number;
 }
 
 interface KickerMonitor {
-    returnFieldGoalsMadeCalculation(debutYear: string): number;
+    returnFieldGoalsMadeBefore1980Calculation(goalsMade: number): number;
+    returnFieldGoalsMadeDuringOrAfter1980Calculation(goalsMade: number): number;
 }
