@@ -1,19 +1,26 @@
-import { IQuarterback } from "../../interfaces/positions/IQuarterback";
+import { IQuarterback } from '../../interfaces/positions/quarterback/IQuarterback';
 
 export abstract class QuarterbackService implements IQuarterback {
-    returnSuperBowlLossesCalculation(timesLostSuperBowl: number): number {
-        throw new Error("Method not implemented.");
-    }
-    returnPassingYardsBefore1980Calculation(passingYards: number): number {
-        throw new Error("Method not implemented.");
-    }
-    returnPassingYardsDuringOrAfter1980Calculation(passingYards: number): number {
-        throw new Error("Method not implemented.");
-    }
-    returnPassingTouchdownsBefore1980Calculation(passingTouchdowns: number): number {
-        throw new Error("Method not implemented.");
-    }
-    returnPassingTouchdownsDuringOrAfter1980Calculation(passingTouchdowns: number): number {
-        throw new Error("Method not implemented.");
-    }
+  returnNoChampionshipsPenaltyCalculation(): number {
+    throw new Error('Method not implemented.');
+  }
+  returnSuperBowlLossesCalculation(timesLostSuperBowl: number): number {
+    throw new Error('Method not implemented.');
+  }
+  returnPassingYardsBefore1980Calculation(passingYards: number): number {
+    throw new Error('Method not implemented.');
+  }
+  returnPassingYardsDuringOrAfter1980Calculation(passingYards: number): number {
+    throw new Error('Method not implemented.');
+  }
+  returnPassingTouchdownsBefore1980Calculation(
+    passingTouchdowns: number,
+  ): number {
+    throw new Error('Method not implemented.');
+  }
+  returnPassingTouchdownsDuringOrAfter1980Calculation(
+    passingTouchdowns: number,
+  ): number {
+    throw new Error('Method not implemented.');
+  }
 }
