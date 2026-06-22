@@ -1,6 +1,7 @@
 import { IWideReceiver } from "../../interfaces/positions/wide-receiver/IWideReceiver";
+import { CommonService } from "../common/commonService";
 
-export abstract class BaseWideReceiverService implements IWideReceiver {
+export abstract class BaseWideReceiverService extends CommonService implements IWideReceiver {
     returnReceivingYardsBefore1980Calculation(receivingYards: number): number {
         throw new Error("Method not implemented.");
     }

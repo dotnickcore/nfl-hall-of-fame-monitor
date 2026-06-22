@@ -1,6 +1,7 @@
 import { IRunningBack } from "../../interfaces/positions/running-back/IRunningBack";
+import { CommonService } from "../common/commonService";
 
-export abstract class BaseRunningBackService implements IRunningBack {
+export abstract class BaseRunningBackService extends CommonService implements IRunningBack {
     returnRushingYardsCalculation(rushingYards: number): number {
         throw new Error("Method not implemented.");
     }
