@@ -1,13 +1,3 @@
-import { IRunningBack } from "../../interfaces/positions/running-back/IRunningBack";
+import { BaseRunningBackService } from "./baseRunningBackService";
 
-export abstract class RunningBackService implements IRunningBack {
-    returnRushingYardsCalculation(rushingYards: number): number {
-        throw new Error("Method not implemented.");
-    }
-    returnRushingTouchdownsCalculation(rushingTouchdowns: number): number {
-        throw new Error("Method not implemented.");
-    }
-    returnNoChampionshipsPenaltyCalculation(): number {
-        throw new Error("Method not implemented.");
-    }
-}
+export class RunningClassService extends BaseRunningBackService {}
