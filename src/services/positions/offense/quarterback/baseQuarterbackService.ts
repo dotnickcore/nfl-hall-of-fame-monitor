@@ -11,6 +11,9 @@ export abstract class BaseQuarterbackService extends CommonService implements IQ
   returnNoDesignationTeamSelectedCalculation(): number {
     throw new Error('Method not implemented.');
   }
+  returnChampionshipsWonCalculation(championshipsAwarded: number): number {
+    throw new Error('Method not implemented.');
+  }
   returnNoChampionshipsPenaltyCalculation(): number {
     throw new Error('Method not implemented.');
   }

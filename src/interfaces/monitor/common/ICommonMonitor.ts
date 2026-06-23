@@ -5,5 +5,7 @@ import { IMostValuablePlayer } from "./most-valuable-player/IMostValuablePlayer"
 import { IProBowl } from "./pro-bowl/IProBowl";
 import { IWeightedApproximateValue } from "./weighted-approximate-value/IWeightedApproximateValue";
 import { IAFLPenalty } from "./afl-penalty/IAFLPenalty";
+import { IDefensivePlayerOfTheYear } from "./defensive-player-of-the-year/IDefensivePlayerOfTheYear";
+import { IAllDecadeTeamSelection } from "./all-decade/IAllDecadeTeamSelection";
 
-export interface ICommonMonitor extends IMostValuablePlayer, IFirstTeamAssociatedPress, IProBowl, IChampionshipsWon, IWeightedApproximateValue, IHallOfFame, IAFLPenalty {};
+export interface ICommonMonitor extends IMostValuablePlayer, IFirstTeamAssociatedPress, IProBowl, IChampionshipsWon, IWeightedApproximateValue, IHallOfFame, IAFLPenalty, IDefensivePlayerOfTheYear, IAllDecadeTeamSelection {};
