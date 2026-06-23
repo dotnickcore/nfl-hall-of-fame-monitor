@@ -1,0 +1,1 @@
+export const NO_CHAMPIONSHIPS_PENALTY: number = 5;

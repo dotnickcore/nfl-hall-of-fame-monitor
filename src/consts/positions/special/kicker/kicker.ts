@@ -1,0 +1,3 @@
+export const FIELD_GOALS_THRESHOLD_DURING_OR_AFTER_1980: number= 450;
+export const FIELD_GOALS_THRESHOLD_BEFORE_1980: number = 300;
+export const FIELD_GOALS_MULTIPLIER: number = 0.25;
