@@ -1,35 +1,21 @@
 import { IQuarterback } from '../../../../interfaces/positions/offense/quarterback/IQuarterback';
+import { CHAMPIONSHIPS_WON_MULTIPLIER, NO_CHAMPIONSHIPS_PENALTY, PASSING_TOUCHDOWNS_MULTIPLIER, PASSING_YARDS_MULTIPLIER, SUPER_BOWL_LOSSES_MULTIPLIER } from "../../../../consts/positions/offense/quarterback/quarterback";
 import { CommonService } from '../../../common/commonService';
 
 export abstract class BaseQuarterbackService extends CommonService implements IQuarterback {
-  returnFirstTeamSelectedCalculation(): number {
-    throw new Error('Method not implemented.');
-  }
-  returnSecondTeamSelectedCalculation(): number {
-    throw new Error('Method not implemented.');
-  }
-  returnNoDesignationTeamSelectedCalculation(): number {
-    throw new Error('Method not implemented.');
+  returnSuperBowlLossesCalculation(timesLostSuperBowl: number): number {
+    return timesLostSuperBowl * SUPER_BOWL_LOSSES_MULTIPLIER;
   }
   returnChampionshipsWonCalculation(championshipsAwarded: number): number {
-    throw new Error('Method not implemented.');
+    return championshipsAwarded * CHAMPIONSHIPS_WON_MULTIPLIER;
+  }
+  returnPassingYardsMulitiplierCalculation(passingYards: number): number {
+    return passingYards * PASSING_YARDS_MULTIPLIER;
+  }
+  returnPassingTouchdownsMulitiplierCalculation(passingTouchdowns: number): number {
+    return passingTouchdowns * PASSING_TOUCHDOWNS_MULTIPLIER;
   }
   returnNoChampionshipsPenaltyCalculation(): number {
-    throw new Error('Method not implemented.');
-  }
-  returnSuperBowlLossesCalculation(timesLostSuperBowl: number): number {
-    throw new Error('Method not implemented.');
-  }
-  returnPassingYardsBefore1980Calculation(passingYards: number): number {
-    throw new Error('Method not implemented.');
-  }
-  returnPassingYardsDuringOrAfter1980Calculation(passingYards: number): number {
-    throw new Error('Method not implemented.');
-  }
-  returnPassingTouchdownsBefore1980Calculation(passingTouchdowns: number): number {
-    throw new Error('Method not implemented.');
-  }
-  returnPassingTouchdownsDuringOrAfter1980Calculation(passingTouchdowns: number): number {
-    throw new Error('Method not implemented.');
+    return NO_CHAMPIONSHIPS_PENALTY
   }
 }
