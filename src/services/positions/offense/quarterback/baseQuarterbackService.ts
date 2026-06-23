@@ -23,14 +23,10 @@ export abstract class BaseQuarterbackService extends CommonService implements IQ
   returnPassingYardsDuringOrAfter1980Calculation(passingYards: number): number {
     throw new Error('Method not implemented.');
   }
-  returnPassingTouchdownsBefore1980Calculation(
-    passingTouchdowns: number,
-  ): number {
+  returnPassingTouchdownsBefore1980Calculation(passingTouchdowns: number): number {
     throw new Error('Method not implemented.');
   }
-  returnPassingTouchdownsDuringOrAfter1980Calculation(
-    passingTouchdowns: number,
-  ): number {
+  returnPassingTouchdownsDuringOrAfter1980Calculation(passingTouchdowns: number): number {
     throw new Error('Method not implemented.');
   }
 }
