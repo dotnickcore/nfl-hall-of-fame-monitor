@@ -1,6 +1,9 @@
 import { ICommon } from "../../interfaces/monitor/common/ICommon";
 
 export abstract class CommonService implements ICommon {
+    returnPlayedInAFLPenaltyCalculation(yearsPlayed: number): number {
+        throw new Error("Method not implemented.");
+    }
     returnMostValuablePlayerCalculation(timesAwarded: number): number {
         throw new Error("Method not implemented.");
     }

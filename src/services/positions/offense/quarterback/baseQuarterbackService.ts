@@ -1,7 +1,16 @@
-import { IQuarterback } from '../../interfaces/positions/quarterback/IQuarterback';
-import { CommonService } from '../common/commonService';
+import { IQuarterback } from '../../../../interfaces/positions/offense/quarterback/IQuarterback';
+import { CommonService } from '../../../common/commonService';
 
 export abstract class BaseQuarterbackService extends CommonService implements IQuarterback {
+  returnFirstTeamSelectedCalculation(): number {
+    throw new Error('Method not implemented.');
+  }
+  returnSecondTeamSelectedCalculation(): number {
+    throw new Error('Method not implemented.');
+  }
+  returnNoDesignationTeamSelectedCalculation(): number {
+    throw new Error('Method not implemented.');
+  }
   returnNoChampionshipsPenaltyCalculation(): number {
     throw new Error('Method not implemented.');
   }
