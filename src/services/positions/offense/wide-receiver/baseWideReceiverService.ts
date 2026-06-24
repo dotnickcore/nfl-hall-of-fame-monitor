@@ -1,14 +1,15 @@
+import { NO_CHAMPIONSHIPS_PENALTY, RECEIVING_TOUCHDOWNS_MULTIPLIER, RECEIVING_YARDS_MULTIPLIER } from "../../../../consts/positions/offense/wide-receiver/wideReceiver";
 import { IWideReceiver } from "../../../../interfaces/positions/offense/wide-receiver/IWideReceiver";
 import { CommonService } from "../../../common/commonService";
 
 export abstract class BaseWideReceiverService extends CommonService implements IWideReceiver {
     returnReceivingYardsMulitiplierCalculation(receivingYards: number): number {
-        throw new Error("Method not implemented.");
+        return receivingYards * RECEIVING_YARDS_MULTIPLIER
     }
     returnReceivingTouchdownsMulitiplierCalculation(receivingTouchdowns: number): number {
-        throw new Error("Method not implemented.");
+        return receivingTouchdowns * RECEIVING_TOUCHDOWNS_MULTIPLIER;
     }
     returnNoChampionshipsPenaltyCalculation(): number {
-        throw new Error("Method not implemented.");
+        return NO_CHAMPIONSHIPS_PENALTY
     }
 }

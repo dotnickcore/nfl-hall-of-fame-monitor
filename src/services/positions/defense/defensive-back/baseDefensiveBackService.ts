@@ -1,11 +1,12 @@
 import { CommonService } from "../../../common/commonService";
 import { IDefensiveBack } from "../../../../interfaces/positions/defense/defensive-back/IDefensiveBack";
+import { INTERCEPTION_MULTIPLIR, NO_CHAMPIONSHIPS_PENALTY } from "../../../../consts/positions/defense/defensive-back/defensiveBack";
 
 export abstract class BaseDefensiveBackService extends CommonService implements IDefensiveBack {
     returnInterceptionsCalculation(interceptions: number): number {
-        throw new Error("Method not implemented.");
+        return interceptions * INTERCEPTION_MULTIPLIR;
     }
     returnNoChampionshipsPenaltyCalculation(): number {
-        throw new Error("Method not implemented.");
+        return NO_CHAMPIONSHIPS_PENALTY;
     }
 }

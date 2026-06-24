@@ -1,23 +1,15 @@
+import { NO_CHAMPIONSHIPS_PENALTY, RUSHING_TOUCHDOWNS_MULTIPLIER, RUSHING_YARDS_MULTIPLIER } from "../../../../consts/positions/offense/running-back/runningBack";
 import { IRunningBack } from "../../../../interfaces/positions/offense/running-back/IRunningBack";
 import { CommonService } from "../../../common/commonService";
 
 export abstract class BaseRunningBackService extends CommonService implements IRunningBack {
-    returnFirstTeamSelectedCalculation(): number {
-        throw new Error("Method not implemented.");
-    }
-    returnSecondTeamSelectedCalculation(): number {
-        throw new Error("Method not implemented.");
-    }
-    returnNoDesignationTeamSelectedCalculation(): number {
-        throw new Error("Method not implemented.");
-    }
     returnRushingYardsCalculation(rushingYards: number): number {
-        throw new Error("Method not implemented.");
+        return rushingYards * RUSHING_YARDS_MULTIPLIER;
     }
     returnRushingTouchdownsCalculation(rushingTouchdowns: number): number {
-        throw new Error("Method not implemented.");
+        return rushingTouchdowns * RUSHING_TOUCHDOWNS_MULTIPLIER;
     }
     returnNoChampionshipsPenaltyCalculation(): number {
-        throw new Error("Method not implemented.");
+        return NO_CHAMPIONSHIPS_PENALTY;
     }
 }

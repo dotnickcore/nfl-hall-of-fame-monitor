@@ -1,11 +1,12 @@
+import { NO_CHAMPIONSHIPS_PENALTY, SACKS_MULTIPLIR } from "../../../../consts/positions/defense/defensive-end/defensiveEnd";
 import { IDefensiveEnd } from "../../../../interfaces/positions/defense/defensive-end/IDefensiveEnd";
 import { CommonService } from "../../../common/commonService";
 
 export abstract class BaseDefensiveEndService extends CommonService implements IDefensiveEnd {
     returnSacksCalculation(sacksMade: number): number {
-        throw new Error("Method not implemented.");
+        return sacksMade * SACKS_MULTIPLIR;
     }
     returnNoChampionshipsPenaltyCalculation(): number {
-        throw new Error("Method not implemented.");
+        return NO_CHAMPIONSHIPS_PENALTY
     }
 }
