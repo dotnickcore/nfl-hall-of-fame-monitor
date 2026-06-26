@@ -1,3 +1,3 @@
-import { IAFLPenaltyMonitor } from "./IAFLPenaltyMonitor";
-
-export interface IAFLPenalty extends IAFLPenaltyMonitor {}
+export interface IAFLPenalty {
+    returnPlayedInAFLPenaltyCalculation(yearsPlayed: number): number;
+}

@@ -1,3 +1,4 @@
-import { IHallOfFameMonitor } from "./IHallOfFameMonitor";
-
-export interface IHallOfFame extends IHallOfFameMonitor {}
+export interface IHallOfFame {
+    returnAmountOfTimesWasHallOfFameFinalistCalculation(numberOfNominations: number): number;
+    returnAmountOfTimesWasHallOfFameSemifinalistCalculation(numberOfNominations: number): number;
+}

@@ -1,4 +1,5 @@
 export const YEAR_1980: string = "1980";
+export const ZERO = 0;
 export const MOST_VALUABLE_PLAYER_MULTIPLIER: number = 12.5;
 export const DEFENSIVE_PLAYER_MULTIPLIER: number = 12.5;
 export const CHAMPIONSHIPS_WON_MULTIPLIER: number = 2;
@@ -7,7 +8,8 @@ export const ALL_PRO_FIRST_TEAM_PERCENTAGE_BONUS: number = 25;
 export const HALL_OF_FAME_BALLOT_FINALIST_BONUS: number = 1;
 export const HALL_OF_FAME_BALLOT_SEMIFINALIST_BONUS: number = 0.5;
 export const EACH_YEAR_PLAYED_IN_AFL_PENALTY: number = 0.75;
-export const PRO_FOOTBALL_HALL_OF_FAME_ALL_DECADE_SELECTIONS_MULTIPLER: number = 25;
+export const PRO_BOWL_MULTIPLIER = 1.5;
+export const PRO_FOOTBALL_HALL_OF_FAME_ALL_DECADE_SELECTIONS_BONUS: number = 25;
 export const FIRST_TEAM_OFFENSE_SELECTION: number = 1;
 export const FIRST_TEAM_DEFENSE_SELECTION: number = 1;
 export const FIRST_TEAM_SPECIAL_TEAMS_SELECTION: number = 0.5;

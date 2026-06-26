@@ -1,3 +1,3 @@
-import { IKickingMonitor } from "./IKickingMonitor";
-
-export interface IKicking extends IKickingMonitor {}
+export interface IKicking {
+    returnFieldGoalsMadeMulitiplierCalculation(goalsMade: number): number;
+}

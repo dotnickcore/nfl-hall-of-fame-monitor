@@ -1,3 +1,3 @@
-import { IChampionshipsWonMonitor } from "./IChampionshipsWonMonitor";
-
-export interface IChampionshipsWon extends IChampionshipsWonMonitor {}
+export interface IChampionshipsWon {
+    returnChampionshipsWonCalculation(championshipsAwarded: number): number;
+}

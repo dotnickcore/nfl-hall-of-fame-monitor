@@ -1,3 +1,3 @@
-import { IFirstTeamAssociatedPressMonitor } from "./IFirstTeamAssociatedPressMonitor";
-
-export interface IFirstTeamAssociatedPress extends IFirstTeamAssociatedPressMonitor {}
+export interface IFirstTeamAssociatedPress {
+    returnFirstTeamAssociatedPressAllProSelectionCalculation(careeringStartingSeasons: number, timesAwarded: number): number;
+}

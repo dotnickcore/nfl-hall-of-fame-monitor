@@ -1,3 +1,3 @@
-import { IDefensivePlayerOfTheYearMonitor } from "./IDefensivePlayerOfTheYearMonitor";
-
-export interface IDefensivePlayerOfTheYear extends IDefensivePlayerOfTheYearMonitor {}
+export interface IDefensivePlayerOfTheYear {
+    returnDefensivePlayerOfTheYearCalculation(timesAwarded: number): number;
+}

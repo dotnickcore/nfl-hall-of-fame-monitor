@@ -1,3 +1,3 @@
-import { INoChampionshipsPenaltyMonitor } from "./INoChampionshipsPenaltyMonitor";
-
-export interface INoChampionshipsPenalty extends INoChampionshipsPenaltyMonitor {}
+export interface INoChampionshipsPenalty {
+    returnNoChampionshipsPenaltyCalculation(): number;
+}

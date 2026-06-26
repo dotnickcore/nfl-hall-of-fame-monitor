@@ -1,3 +1,3 @@
-import { IWeightedApproximateValueMonitor } from "./IWeightedApproximateValueMonitor";
-
-export interface IWeightedApproximateValue extends IWeightedApproximateValueMonitor {}
+export interface IWeightedApproximateValue {
+    returnWeightedApproximateValueCalculation(weightApproximateValue: number): number;
+}
