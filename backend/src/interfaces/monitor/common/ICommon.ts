@@ -1,5 +1,5 @@
 import { IAFLPenalty } from "./afl-penalty/IAFLPenalty";
-import { IAllDecade } from "./allDecade/IAllDecade";
+import { IAllDecade } from "./all-decade/IAllDecade";
 import { IChampionshipsWon } from "./championships-won/IChampionshipsWon";
 import { IDefensivePlayerOfTheYear } from "./defensive-player-of-the-year/IDefensivePlayerOfTheYear";
 import { IFirstTeamAssociatedPress } from "./first-team-associated-press/IFirstTeamAssociatedPress";
