@@ -1,3 +1,3 @@
-import { BaseCenterService } from "./baseCenterService";
+import { CommonService } from "../../../common/commonService";
 
-export class CenterService extends BaseCenterService {}
+export class CenterService extends CommonService {}

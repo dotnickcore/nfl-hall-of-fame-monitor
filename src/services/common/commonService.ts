@@ -1,3 +1,4 @@
+import { MOST_VALUABLE_PLAYER_MULTIPLIER } from "../../consts/common/common";
 import { ICommon } from "../../interfaces/monitor/common/ICommon";
 
 export abstract class CommonService implements ICommon {
@@ -17,7 +18,7 @@ export abstract class CommonService implements ICommon {
         throw new Error("Method not implemented.");
     }
     returnMostValuablePlayerCalculation(timesAwarded: number): number {
-        throw new Error("Method not implemented.");
+        return timesAwarded * MOST_VALUABLE_PLAYER_MULTIPLIER;
     }
     returnFirstTeamAssociatedPressAllProSelectionCalculation(timesAwarded: number): number {
         throw new Error("Method not implemented.");
